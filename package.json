@@ -1,8 +1,8 @@
 {
   "scripts": {
-  "build": "npx tailwindcss -i ./frontend/css/tailwind.css -o ./frontend/css/style.css",
-  "watch": "npx tailwindcss -i ./frontend/css/tailwind.css -o ./frontend/css/style.css --watch"
-},
+    "build": "npx tailwindcss -i ./frontend/css/tailwind.css -o ./frontend/css/style.css",
+    "watch": "npx tailwindcss -i ./frontend/css/tailwind.css -o ./frontend/css/style.css --watch"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.16"
   }
