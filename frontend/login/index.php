@@ -1,3 +1,4 @@
+<?php $comp = '../components/'; ?>
 <!doctype html>
 <html>
 
@@ -8,7 +9,8 @@
 </head>
 
 <body>
-    <?php include_once __DIR__ . '/../../components/shared/header.php' ?>
+    <!-- Header -->
+    <?php include_once $comp . 'header.php'; ?>
 
     <section class="max-h-screen py-5 pb-11 flex items-center justify-center bg-gray-100 p-4">
         <div class="bg-white shadow-lg rounded-lg p-6 max-w-md w-full">
@@ -47,7 +49,7 @@
         </div>
     </section>
 
-    <?php include_once __DIR__ . '/../../components/shared/footer.html' ?>
+    <?php include_once $comp . 'footer.php'; ?>
 </body>
 
 </html>

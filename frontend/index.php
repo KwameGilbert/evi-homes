@@ -18,11 +18,20 @@
   <!-- Listings -->
   <?php include_once $comp . 'listings.php'; ?>
 
+  <!-- Property Map -->
+  <?php include_once $comp . 'property-map.php'; ?>
+
   <!-- Reviews -->
   <?php include_once $comp . 'reviews.php'; ?>
 
+  <!-- About Us -->
+   <?php include_once $comp . 'about.php'; ?>
+
   <!-- FAQ -->
   <?php include_once $comp . 'faq.php'; ?>
+
+  <!-- Contact Us -->
+  <?php include_once $comp . 'contact-us.php'; ?>
 
   <!-- Footer -->
   <?php include_once $comp . 'footer.php'; ?>

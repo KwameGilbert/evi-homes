@@ -8,10 +8,11 @@
 
         <!-- Grid Layout -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
             <!-- Property Card -->
             <div class="bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition">
                 <div class="relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Property 1" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/531318099.jpg?k=760093c57c9e3adc0b915b0b75d62f27e1fdfefd51a442ef89cbab6f6c8ddc68&o=&hp=1" alt="Property 1" class="rounded-t-lg w-full h-48 object-cover">
                     <span class="absolute top-2 left-2 bg-yellow-500 text-white px-3 py-1 text-sm rounded-lg">Featured</span>
                 </div>
                 <div class="p-4">
@@ -35,7 +36,7 @@
             <!-- Repeat Property Cards for other listings -->
             <div class="bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition">
                 <div class="relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Property 2" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="https://thumbs.6sqft.com/wp-content/uploads/2015/02/21005156/airbnb-evicted-nyc-2.jpg?w=1560&format=webp" alt="Property 2" class="rounded-t-lg w-full h-48 object-cover">
                 </div>
                 <div class="p-4">
                     <h3 class="text-xl font-bold text-blue-black">Cozy Studio</h3>
@@ -55,7 +56,7 @@
 
             <div class="bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition">
                 <div class="relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Property 3" class="rounded-t-lg w-full h-48 object-cover">
+                    <img src="https://wp-eris.s3.eu-west-1.amazonaws.com/wp-content/uploads/sites/2/2024/11/Airbnb-friendly-Apartments-1024x661.png" alt="Property 3" class="rounded-t-lg w-full h-48 object-cover">
                 </div>
                 <div class="p-4">
                     <h3 class="text-xl font-bold text-blue-black">Modern Penthouse</h3>
