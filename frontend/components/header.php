@@ -1,6 +1,7 @@
 <?php
 include_once __DIR__ . '/../components/base.php';
 $base = 'http://localhost/evi-homes/frontend/';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +13,7 @@ $base = 'http://localhost/evi-homes/frontend/';
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="<?php $base . 'assets/css/style.css'?>">
     <!-- Fontawesome -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-900">

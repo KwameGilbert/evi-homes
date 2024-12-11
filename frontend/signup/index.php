@@ -12,7 +12,7 @@
     <!-- Header -->
     <?php include_once $comp . 'header.php'; ?>
 
-    <section class="max-h-screen mt-4 flex items-center justify-center bg-gray-100">
+    <section class="max-h-full py-11 flex items-center justify-center bg-gray-100">
         <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
             <!-- Header -->
             <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Sign Up</h2>
@@ -56,7 +56,7 @@
         </div>
     </section>
     
-    <?php include_once $comp . 'footer.html' ?>
+    <?php include_once $comp . 'footer.php' ?>
 </body>
 
 </html>

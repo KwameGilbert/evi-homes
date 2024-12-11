@@ -29,7 +29,7 @@
                     <p class="text-lg font-bold text-blue-black mt-4">$120 <span class="text-gray-500 text-sm">/ night</span></p>
                 </div>
                 <div class="border-t border-gray-200 p-4 text-center">
-                    <a href="#" class="text-yellow-500 hover:text-yellow-600 font-medium">View Details</a>
+                    <a href="<?php echo $base . 'apartment' ?>" class="text-yellow-500 hover:text-yellow-600 font-medium">View Details</a>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                     <p class="text-lg font-bold text-blue-black mt-4">$80 <span class="text-gray-500 text-sm">/ night</span></p>
                 </div>
                 <div class="border-t border-gray-200 p-4 text-center">
-                    <a href="#" class="text-yellow-500 hover:text-yellow-600 font-medium">View Details</a>
+                    <a href="<?php echo $base . 'apartment' ?>" class="text-yellow-500 hover:text-yellow-600 font-medium">View Details</a>
                 </div>
             </div>
 
@@ -70,7 +70,7 @@
                     <p class="text-lg font-bold text-blue-black mt-4">$200 <span class="text-gray-500 text-sm">/ night</span></p>
                 </div>
                 <div class="border-t border-gray-200 p-4 text-center">
-                    <a href="#" class="text-yellow-500 hover:text-yellow-600 font-medium">View Details</a>
+                    <a href="<?php echo $base . 'apartment' ?>" class="text-yellow-500 hover:text-yellow-600 font-medium">View Details</a>
                 </div>
             </div>
         </div>

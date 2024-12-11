@@ -14,10 +14,11 @@
 
   <!-- Hero -->
   <?php include_once $comp . 'hero.php'; ?>
-
+ 
+  
   <!-- Listings -->
   <?php include_once $comp . 'listings.php'; ?>
-
+  
   <!-- Property Map -->
   <?php include_once $comp . 'property-map.php'; ?>
 
@@ -33,6 +34,12 @@
   <!-- Contact Us -->
   <?php include_once $comp . 'contact-us.php'; ?>
 
+  <!-- Chat Widget -->
+  <?php include_once $comp . 'chat-widget.php'; ?>
+  
+  <!-- Newsletter -->
+  <?php include_once $comp . 'newsletters.php'; ?>
+  
   <!-- Footer -->
   <?php include_once $comp . 'footer.php'; ?>
 
