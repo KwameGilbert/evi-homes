@@ -15,6 +15,39 @@
         .carousel img {
             max-height: 400px;
         }
+
+        .glider-contain {
+            position: relative;
+        }
+
+        .glider-prev,
+        .glider-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .glider-prev {
+            left: -20px;
+        }
+
+        .glider-next {
+            right: -20px;
+        }
+
+        .glider::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 
@@ -27,28 +60,32 @@
         <div class="mb-6">
             <h1 class="text-3xl font-bold text-blue-black">The Grand Lux Apartment</h1>
             <p class="text-gray-600 mt-2">Located in the heart of Beverly Hills, Los Angeles, CA</p>
-  
+        </div>
 
         <!-- Image Gallery -->
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
-             <div>
-                  <img src="https://via.placeholder.com/800x600" alt="Main Image" class="w-full h-full rounded-lg object-cover">
-               </div>
-
+        <div class="mb-6">
+            <div class="hidden lg:grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div>
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/02526220-8bc3-4add-a811-4258f80f4a92.jpeg?im_w=960&im_format=avif" alt="Main Image" class="w-full h-full rounded-lg object-cover">
+                </div>
                 <div class="grid grid-cols-2 grid-rows-2 gap-2">
-
-                     <img src="https://via.placeholder.com/400x300" alt="Image 1" class="w-full h-full rounded-lg object-cover">
-
-                      <img src="https://via.placeholder.com/400x300" alt="Image 2" class="w-full h-full rounded-lg object-cover">
-
-                       <img src="https://via.placeholder.com/400x300" alt="Image 3" class="w-full h-full rounded-lg object-cover">
-
-                        <img src="https://via.placeholder.com/400x300" alt="Image 4" class="w-full h-full rounded-lg object-cover">
-
-
-                  </div>
-
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/bfeb996d-16ab-4532-acfe-f1bae718aa9d.jpeg?im_w=720&im_format=avif" alt="Image 1" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://a0.muscache.com/im/pictures/f3faf0bb-d29f-4025-8cd3-f8c6203702e3.jpg?im_w=720&im_format=avif" alt="Image 2" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/a1e2990d-b389-41fe-be2e-6a41cb5655b4.jpeg?im_w=720&im_format=avif" alt="Image 3" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://via.placeholder.com/400x300" alt="Image 4" class="w-full h-full rounded-lg object-cover">
+                </div>
+            </div>
+            <div class="lg:hidden glider-contain">
+                <div class="glider">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/02526220-8bc3-4add-a811-4258f80f4a92.jpeg?im_w=960&im_format=avif" alt="Main Image" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/bfeb996d-16ab-4532-acfe-f1bae718aa9d.jpeg?im_w=720&im_format=avif" alt="Image 1" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://a0.muscache.com/im/pictures/f3faf0bb-d29f-4025-8cd3-f8c6203702e3.jpg?im_w=720&im_format=avif" alt="Image 2" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/a1e2990d-b389-41fe-be2e-6a41cb5655b4.jpeg?im_w=720&im_format=avif" alt="Image 3" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/fc8696de-4e7f-4704-a904-8b6aefe68a29.jpeg?im_w=240&im_format=avif" alt="Image 4" class="w-full h-full rounded-lg object-cover">
+                </div>
+                <button aria-label="Previous" class="glider-prev">&larr;</button>
+                <button aria-label="Next" class="glider-next">&rarr;</button>
+            </div>
         </div>
 
         <!-- Description and Amenities -->
@@ -62,32 +99,31 @@
                 <h3 class="text-xl font-bold text-blue-black mb-4">Amenities</h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                     <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/24" alt="Wifi" class="w-6 h-6">
+                        <i class="fas fa-wifi text-4xl"></i>
                         <span>High-Speed Wifi</span>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/24" alt="Pool" class="w-6 h-6">
+                        <i class="fas fa-swimmer text-4xl"></i>
                         <span>Swimming Pool</span>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/24" alt="Parking" class="w-6 h-6">
+                        <i class="fas fa-parking text-4xl"></i>
                         <span>Free Parking</span>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/24" alt="Gym" class="w-6 h-6">
+                        <i class="fas fa-dumbbell text-4xl"></i>
                         <span>Fully Equipped Gym</span>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/24" alt="Kitchen" class="w-6 h-6">
+                        <i class="fas fa-utensils text-4xl"></i>
                         <span>Modern Kitchen</span>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/24" alt="TV" class="w-6 h-6">
+                        <i class="fas fa-tv text-4xl"></i>
                         <span>Smart TV</span>
                     </div>
                 </div>
             </div>
-
 
             <!-- Booking Form -->
             <div class="lg:w-1/3 bg-gray-100 p-6 rounded-lg shadow-lg">
@@ -135,6 +171,16 @@
                 document.getElementById("totalCost").textContent = `$${totalCost}`;
             }
         }
+
+        new Glider(document.querySelector(".glider"), {
+            slidesToShow: 1,
+            dots: false,
+            draggable: true,
+            arrows: {
+                prev: ".glider-prev",
+                next: ".glider-next"
+            }
+        });
     </script>
     <?php include_once $comp . 'footer.php'; ?>
 
