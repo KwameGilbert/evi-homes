@@ -81,7 +81,7 @@
                     <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/bfeb996d-16ab-4532-acfe-f1bae718aa9d.jpeg?im_w=720&im_format=avif" alt="Image 1" class="w-full h-full rounded-lg object-cover">
                     <img src="https://a0.muscache.com/im/pictures/f3faf0bb-d29f-4025-8cd3-f8c6203702e3.jpg?im_w=720&im_format=avif" alt="Image 2" class="w-full h-full rounded-lg object-cover">
                     <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/a1e2990d-b389-41fe-be2e-6a41cb5655b4.jpeg?im_w=720&im_format=avif" alt="Image 3" class="w-full h-full rounded-lg object-cover">
-                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/fc8696de-4e7f-4704-a904-8b6aefe68a29.jpeg?im_w=240&im_format=avif" alt="Image 4" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/fc8696de-4e7f-4704-a904-8b6aefe68a29.jpeg" alt="Image 4" class="w-full h-full rounded-lg object-cover">
                 </div>
                 <button aria-label="Previous" class="glider-prev">&larr;</button>
                 <button aria-label="Next" class="glider-next">&rarr;</button>
