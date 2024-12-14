@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Apartment - EviHomes</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./../assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
@@ -55,7 +56,7 @@
 
 <body class="bg-gray-100 text-gray-900">
     <!-- Apartment View Page -->
-    <div class="container px-4 lg:px-8 py-8">
+    <div class="container px-4 lg:px-8 py-8 mx-auto">
         <!-- Apartment Title and Location -->
         <div class="mb-6">
             <h1 class="text-3xl font-bold text-blue-black">The Grand Lux Apartment</h1>

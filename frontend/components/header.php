@@ -21,7 +21,7 @@ $base = 'http://localhost/evi-homes/frontend/';
         <div class="container mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
             <!-- Logo -->
             <div class="text-yellow-500 font-bold text-xl">
-                <a href="#" class="flex items-center space-x-2">
+                <a href="http://localhost/evi-homes/frontend/" class="flex items-center space-x-2">
                     <span class="text-blue-black">Evi-Homes</span>
                 </a>
             </div>
