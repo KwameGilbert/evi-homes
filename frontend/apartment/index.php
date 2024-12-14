@@ -55,7 +55,7 @@
 
 <body class="bg-gray-100 text-gray-900">
     <!-- Apartment View Page -->
-    <div class="container mx-auto px-4 lg:px-8 py-8">
+    <div class="container px-4 lg:px-8 py-8">
         <!-- Apartment Title and Location -->
         <div class="mb-6">
             <h1 class="text-3xl font-bold text-blue-black">The Grand Lux Apartment</h1>
@@ -63,7 +63,7 @@
         </div>
 
         <!-- Image Gallery -->
-        <div class="mb-6">
+        <div class="mb-6 mx-auto">
             <div class="hidden lg:grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div>
                     <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-927661596813627788/original/02526220-8bc3-4add-a811-4258f80f4a92.jpeg?im_w=960&im_format=avif" alt="Main Image" class="w-full h-full rounded-lg object-cover">
@@ -144,9 +144,12 @@
                     </div>
                     <p class="text-gray-600">Price per night: <span class="font-bold text-blue-black">$250</span></p>
                     <p class="text-gray-600">Total cost: <span id="totalCost" class="font-bold text-blue-black">$0</span></p>
-                    <button type="submit"
+                    <a href='./../booking-summary/'>
+                        <button type="button"
                         class="mt-4 w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600 transition">Book
                         Now</button>
+                    </a>
+               
                 </form>
             </div>
         </div>
