@@ -139,18 +139,17 @@
                         <select id="guests" class="w-full border border-gray-300 rounded-lg p-2">
                             <option value="1">1 Guest</option>
                             <option value="2">2 Guests</option>
-                            <option value="3">3 Guests</option>
-                            <option value="4">4 Guests</option>
+
                         </select>
                     </div>
                     <p class="text-gray-600">Price per night: <span class="font-bold text-blue-black">$250</span></p>
                     <p class="text-gray-600">Total cost: <span id="totalCost" class="font-bold text-blue-black">$0</span></p>
                     <a href='./../booking-summary/'>
                         <button type="button"
-                        class="mt-4 w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600 transition">Book
-                        Now</button>
+                            class="mt-4 w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600 transition">Book
+                            Now</button>
                     </a>
-               
+
                 </form>
             </div>
         </div>
@@ -161,6 +160,16 @@
         const dateRangePicker = flatpickr("#dateRange", {
             mode: "range",
             dateFormat: "Y-m-d",
+            disable: [
+                // Array of dates to disable
+                "2023-10-10",
+                "2023-10-15",
+                // Array of date ranges to disable
+                {
+                    from: "2023-10-20",
+                    to: "2023-10-25"
+                }
+            ],
             onChange: (selectedDates) => {
                 calculateTotalCost(selectedDates);
             },
