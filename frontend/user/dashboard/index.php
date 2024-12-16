@@ -11,116 +11,165 @@
 
 <body class="bg-gray-50">
     <div id="dashboard-app" class="min-h-screen">
-        <!-- Navigation -->
-        <nav class="bg-white shadow-md">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between h-16">
-                    <div class="flex">
-                        <!-- Logo -->
-                        <div class="flex-shrink-0 flex items-center">
-                            <img class="h-8 w-auto" src="airbnb-logo.png" alt="Airbnb Logo">
+            <!-- Navigation -->
+            <nav class="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between items-center h-20">
+                        <div class="flex items-center space-x-8">
+                            <!-- Logo -->
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-auto" src="airbnb-logo.png" alt="Airbnb Logo">
+                            </div>
+
+                            <!-- Navigation Links -->
+                            <div class="hidden md:flex space-x-6">
+                                <a href="#" class="text-gray-700 hover:text-rose-600 transition-colors duration-300 font-medium">Dashboard</a>
+                                <a href="#bookings" class="text-gray-700 hover:text-rose-600 transition-colors duration-300 font-medium">Bookings</a>
+                                <a href="#profile" class="text-gray-700 hover:text-rose-600 transition-colors duration-300 font-medium">Profile</a>
+                            </div>
                         </div>
 
-                        <!-- Navigation Links -->
-                        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                            <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-                            <a href="#bookings" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Bookings</a>
-                            <a href="#profile" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Profile</a>
-                        </div>
-                    </div>
-
-                    <!-- User Profile and Logout -->
-                    <div class="flex items-center">
-                        <div class="ml-3 relative">
-                            <div>
-                                <button type="button" id="user-menu-button" class="bg-white flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                    <span class="sr-only">Open user menu</span>
-                                    <img class="h-8 w-8 rounded-full" src="user-avatar.png" alt="User Avatar">
+                        <!-- User Profile -->
+                        <div class="flex items-center">
+                            <div class="relative">
+                                <button type="button" class="flex items-center space-x-2 focus:outline-none group">
+                                    <img class="h-10 w-10 rounded-full ring-2 ring-offset-2 ring-rose-500/50 group-hover:ring-rose-600 transition-all" src="user-avatar.png" alt="User Avatar">
+                                    <span class="hidden md:block text-gray-700 font-medium group-hover:text-rose-600 transition-colors">John Doe</span>
                                 </button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
-                            <!-- Dropdown menu -->
-                            <div id="user-dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                <a href="#profile" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
-                                <a href="#settings" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
-                                <a href="logout.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+            <!-- Main Dashboard Content -->
+            <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                <!-- Welcome Section -->
+                <section class="mb-10 bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h1 class="text-4xl font-bold text-gray-900 mb-4">Welcome back, John!</h1>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-rose-500 h-3 rounded-full" style="width: 80%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-3">Profile 80% Complete – Add a profile picture to complete your profile</p>
+                        </div>
+                        <div>
+                            <button class="bg-rose-500 text-white px-6 py-3 rounded-xl hover:bg-rose-600 transition-colors shadow-md">
+                                Complete Profile
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dashboard Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Upcoming Bookings -->
+                    <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 transform hover:scale-105 transition-transform">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-3 border-gray-200">Upcoming Bookings</h2>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="font-medium text-gray-700">Paris Apartment</p>
+                                    <p class="text-sm text-gray-500">June 15 - June 22</p>
+                                </div>
+                                <span class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-xs">Confirmed</span>
+                            </div>
+                            <!-- More booking items would go here -->
+                        </div>
+                    </div>
+
+                    <!-- Recommended Apartments -->
+                    <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 transform hover:scale-105 transition-transform">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-3 border-gray-200">Recommended for You</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <img src="apartment-thumb.png" alt="Apartment" class="w-16 h-16 rounded-lg object-cover">
+                                <div>
+                                    <p class="font-medium text-gray-700">Cozy Loft in Barcelona</p>
+                                    <p class="text-sm text-gray-500">$120/night</p>
+                                </div>
+                            </div>
+                            <!-- More recommended apartments -->
+                        </div>
+                    </div>
+
+                    <!-- Past Bookings -->
+                    <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 transform hover:scale-105 transition-transform">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-3 border-gray-200">Past Bookings</h2>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="font-medium text-gray-700">New York Studio</p>
+                                    <p class="text-sm text-gray-500">May 1 - May 5</p>
+                                </div>
+                                <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">Completed</span>
+                            </div>
+                            <!-- More past booking items -->
+                        </div>
+                    </div>
+
+                    <!-- Payment History -->
+                    <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 transform hover:scale-105 transition-transform">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-3 border-gray-200">Payment History</h2>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="font-medium text-gray-700">Barcelona Booking</p>
+                                    <p class="text-sm text-gray-500">May 15, 2024</p>
+                                </div>
+                                <span class="text-gray-700 font-medium">$350</span>
+                            </div>
+                            <!-- More payment history items -->
+                        </div>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 transform hover:scale-105 transition-transform">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-3 border-gray-200">Notifications</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-rose-500 rounded-full mt-2"></div>
+                                <div>
+                                    <p class="text-gray-700">New message from host</p>
+                                    <p class="text-sm text-gray-500">Regarding your upcoming booking</p>
+                                </div>
+                            </div>
+                            <!-- More notification items -->
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Metrics -->
+                    <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 transform hover:scale-105 transition-transform">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-3 border-gray-200">Your Stats</h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <p class="text-3xl font-bold text-rose-600">12</p>
+                                <p class="text-sm text-gray-600">Total Trips</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-3xl font-bold text-rose-600">8</p>
+                                <p class="text-sm text-gray-600">Countries Visited</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </main>
 
-        <!-- Main Dashboard Content -->
-        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <!-- Welcome Section -->
-            <section id="welcome-section" class="mb-8">
-                <h1 class="text-3xl font-bold text-gray-900" id="welcome-message">Welcome back, [Customer Name]!</h1>
-                <div class="mt-4">
-                    <div class="w-full bg-gray-200 rounded-full h-2.5">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%" id="profile-completion-bar"></div>
-                    </div>
-                    <p class="text-sm text-gray-600 mt-2">Profile 80% Complete – Add a profile picture to complete your profile</p>
-                </div>
-            </section>
-
-            <!-- Dashboard Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Upcoming Bookings Card -->
-                <div class="bg-white shadow rounded-lg p-6" id="upcoming-bookings-card">
-                    <h2 class="text-xl font-semibold mb-4">Upcoming Bookings</h2>
-                    <!-- Booking details will be dynamically populated -->
-                    <div id="upcoming-booking-details"></div>
-                </div>
-
-                <!-- Recommended Apartments Card -->
-                <div class="bg-white shadow rounded-lg p-6" id="recommended-apartments-card">
-                    <h2 class="text-xl font-semibold mb-4">Recommended for You</h2>
-                    <!-- Recommended apartments will be dynamically populated -->
-                    <div id="recommended-apartments-list"></div>
-                </div>
-
-                <!-- Past Bookings Card -->
-                <div class="bg-white shadow rounded-lg p-6" id="past-bookings-card">
-                    <h2 class="text-xl font-semibold mb-4">Past Bookings</h2>
-                    <!-- Past bookings will be dynamically populated -->
-                    <div id="past-bookings-list"></div>
-                </div>
-
-                <!-- Additional Cards -->
-                <div class="bg-white shadow rounded-lg p-6" id="payment-history-card">
-                    <h2 class="text-xl font-semibold mb-4">Payment History</h2>
-                    <!-- Payment history will be dynamically populated -->
-                    <div id="payment-history-list"></div>
-                </div>
-
-                <div class="bg-white shadow rounded-lg p-6" id="notifications-card">
-                    <h2 class="text-xl font-semibold mb-4">Notifications</h2>
-                    <!-- Notifications will be dynamically populated -->
-                    <div id="notifications-list"></div>
-                </div>
-
-                <div class="bg-white shadow rounded-lg p-6" id="dashboard-metrics-card">
-                    <h2 class="text-xl font-semibold mb-4">Your Stats</h2>
-                    <!-- Dashboard metrics will be dynamically populated -->
-                    <div id="dashboard-metrics-content"></div>
-                </div>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="bg-white shadow mt-8">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center">
-                    <p class="text-gray-500 text-sm">&copy; 2024 Airbnb. All rights reserved.</p>
-                    <div class="flex space-x-4">
-                        <a href="#help" class="text-gray-600 hover:text-gray-900">Help</a>
-                        <a href="#privacy" class="text-gray-600 hover:text-gray-900">Privacy Policy</a>
-                        <a href="#terms" class="text-gray-600 hover:text-gray-900">Terms of Service</a>
+            <!-- Footer -->
+            <footer class="bg-white/80 backdrop-blur-md shadow-lg mt-10">
+                <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <p class="text-gray-600">&copy; 2024 Airbnb. All rights reserved.</p>
+                        <div class="flex space-x-6">
+                            <a href="#help" class="text-gray-700 hover:text-rose-600 transition-colors">Help</a>
+                            <a href="#privacy" class="text-gray-700 hover:text-rose-600 transition-colors">Privacy Policy</a>
+                            <a href="#terms" class="text-gray-700 hover:text-rose-600 transition-colors">Terms of Service</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+
     </div>
 
     <!-- JavaScript Files -->
