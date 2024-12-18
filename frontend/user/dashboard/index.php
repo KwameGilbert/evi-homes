@@ -31,7 +31,7 @@
 </head>
 
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
-  
+  <?php include_once './components/sidebar.php' ?>
 
     <!-- Desktop and Mobile Main Content -->
     <div class="flex">
@@ -872,7 +872,7 @@
             </section>
         </main>
     </div>
-    </section>
+
 
     <script>
         // Initialize Feather icons
