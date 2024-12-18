@@ -875,7 +875,6 @@
         </main>
     </div>
 
-
     <script>
         // Initialize Feather icons
         feather.replace();
@@ -918,6 +917,6 @@
             });
         });
     </script>
-</body>
 
+</body>
 </html>
