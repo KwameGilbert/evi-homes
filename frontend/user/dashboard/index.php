@@ -33,11 +33,11 @@
 
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
     <!-- Sidebar -->
-    <?php include_once './components/sidebar.php' ?>
+    <?php include_once './components/mobile-sidebar.php' ?>
 
     <!-- Desktop and Mobile Main Content -->
     <div class="flex">
-    
+    <?php include_once './components/desktop-sidebar.php' ?>
 
         <!-- Main Content Area (Padded for Mobile) -->
         <main class="flex-grow p-4 md:p-10 pt-20 md:pt-10 overflow-y-auto w-full" id="main-content">
