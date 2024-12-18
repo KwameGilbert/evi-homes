@@ -32,7 +32,7 @@
 </head>
 
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
-    
+    <!-- Sidebar -->
     <?php include_once './components/sidebar.php' ?>
 
     <!-- Desktop and Mobile Main Content -->
