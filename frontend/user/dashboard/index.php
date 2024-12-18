@@ -27,12 +27,13 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
-        
+
     </style>
 </head>
 
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
-  <?php include_once './components/sidebar.php' ?>
+    
+    <?php include_once './components/sidebar.php' ?>
 
     <!-- Desktop and Mobile Main Content -->
     <div class="flex">
