@@ -124,6 +124,7 @@
                         <span>Smart TV</span>
                     </div>
                 </div>
+
             </div>
 
             <!-- Booking Form -->
@@ -153,6 +154,8 @@
                 </form>
             </div>
         </div>
+        <!-- Host info -->
+        <?php include_once $comp . 'host-info.php' ?>
     </div>
 
     <!-- Scripts -->
