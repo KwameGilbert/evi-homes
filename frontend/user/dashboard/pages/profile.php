@@ -1,4 +1,4 @@
-<section id="profile-section" class="dashboard-section hidden">
+<section id="profile-section" class="dashboard-section">
     <div class="container mx-auto px-4 py-8">
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Profile Sidebar -->

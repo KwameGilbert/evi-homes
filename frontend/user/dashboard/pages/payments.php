@@ -1,4 +1,4 @@
-<section id="payments-section" class="dashboard-section hidden">
+<section id="payments-section" class="dashboard-section">
     <div class="container mx-auto px-4 py-8">
         <div class="flex justify-between items-center mb-8">
             <h1 class="text-3xl font-bold text-gray-900">Payment History</h1>
