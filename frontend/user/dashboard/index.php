@@ -41,7 +41,7 @@
         <!-- Main Content Area (Padded for Mobile) -->
         <main class="flex-grow p-4 md:p-10 pt-20 md:pt-10 overflow-y-auto w-full" id="main-content">
 
-
+            <?php include_once './pages/overview.php' ?>
 
         </main>
     </div>
